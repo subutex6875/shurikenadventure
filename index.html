@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="assets/shuriken.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1">    
+		<title>FloLolow</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="home">
+			<h1>Shuriken Adventure</h1>
+			<button type="button" onclick="previousSkin()" class="arrow"><</button>
+			<img width="80" height="120" src="assets/ninja1.png" id="0">
+			<button type="button" onclick="nextSkin()" class="arrow">></button>
+			<input style="background-color:lightsalmon" type="text" id="nickname" placeholder="Enter your nickname..."><p></p>
+			<button type="button" class="btn-anim left-anim" onclick="play()" id="start">PLAY</button>
+		</div>
+		
+		<div id="room">
+			<button type="button" onclick="start()" id="start">CREATE ROOM</button>
+		</div>
+		
+		<canvas id="canvas" width="1080" height="720"></canvas>
+		
+		<div id="footer">
+			<span>©2022 Flo et Lolow (v1.0)</span>
+		</div>
+		
+		<script>
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+			document.body.innerHTML = "<div id = home><h1>Mobile version coming soon</h1></div>";
+		}
+		</script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+		<script src="script.js"></script>
+  </body>
+</html>

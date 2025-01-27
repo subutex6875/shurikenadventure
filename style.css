@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+body{
+	background-image:url("assets/background.gif");
+	background-size:100%;
+	background-color: #000;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-attachment: fixed;
+}
+
+
+#footer{
+	background-color: #FFF;
+	position: fixed;
+	background: #ccc;
+	bottom: 0;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+#canvas{
+	display: none;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#home{
+	background-color: rgb(255, 255, 255, 0.5);
+	position:static;
+	text-align: center;
+	margin: 5% auto;
+	width: 40%;
+	padding: 2%;
+	line-height: 40px;
+	border-radius: 20px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+#nickname{
+	width:80%;
+	position:static;
+}
+#nickname::placeholder{
+	color: dark-grey;
+	font-size: 80%;
+	text-align: left;
+
+}
+
+h1{
+	font-family : Stencil Std, fantasy;
+	color : #75ff33 ;
+	-webkit-text-stroke: 1px black;
+}
+
+button.left-anim {
+	background: linear-gradient(to left,#75ff33 25%, 50%, #30b326 75%) right;
+	background-size: 200%;
+}
+
+button.left-anim:hover {
+  background-position: left;
+}
+
+button.btn-anim {
+	transition: 0.75s ease-in;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid rgb(118,118, 118);
+	color: rgb(118,118, 118);
+	border-radius: 12px;
+	cursor:pointer;
+	font-size: 28px;
+	padding: 1.5% 10%;
+	border-width: 0px; 
+	width: 100%;
+	font-family : Marker Felt, fantasy; 
+	color: white;
+	-webkit-text-stroke: 1px black;
+}
+
+input {
+	border-radius: 10px;
+	font-size: 28px;
+	padding: 1.5% 10%;
+	border-width: 1px;
+	border-style: solid;
+}
+
+#start {
+	background-color: #75ff33;
+	border-radius: 10px;
+	font-size: 28px;
+	border-width: 0px;
+	width: 100%;
+}
+
+#start:hover {
+	background-color: #30b326;
+}
+
+#room {
+	background-color: rgb(255, 255, 255, 0.5);
+	text-align: center;
+	margin: 20% auto;
+	width: 25%;
+	padding: 10px;
+	border-radius: 20px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	line-height: 40px;
+	display: none; 
+}
+
+.arrow {
+	background-color: rgb(0, 0, 0, 0);
+	border-radius: 10px;
+	font-size: 150px;
+	border-width: 0px;
+	color: #75ff33;
+	width: 10vw;
+}
+
+.arrow:hover {
+	color: #30b326;
+}
+
+
+
+
